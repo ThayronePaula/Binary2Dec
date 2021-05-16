@@ -1,16 +1,46 @@
+$fontSize:1.8rem;
+
+
 .container {
   width: 100%;
   height: 100vh;
   color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 1)), url("../img/alexander-sinn-KgLtFCgfC28-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    margin-top: .5rem;
+    font-size: $fontSize;
+
+  }
+
+  p {
+    font-weight: 700;
+  }
 
   input {
-    width: 50%;
-    padding: 10px;
+    padding: 1.5rem 1rem;
+    margin: .7rem 0;
     outline: 0;
     border: none;
+    font-size: $fontSize;
+    background-color: #555;
+    border-radius: .5rem;
+    color: #fff;
   }
 }
